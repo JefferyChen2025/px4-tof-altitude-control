@@ -23,6 +23,7 @@ This allows the control logic to be developed and validated in simulation before
 
 ## System Architecture
 
+```text
                      TOF_MODE
                         |
             +-----------+-----------+
