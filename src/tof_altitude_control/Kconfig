@@ -1,0 +1,5 @@
+config EXAMPLES_TOF_ALTITUDE_CONTROL
+    bool "tof_altitude_control"
+    default n
+    help
+      Example module for ToF-based altitude control.
