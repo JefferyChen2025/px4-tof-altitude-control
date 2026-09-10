@@ -1,0 +1,55 @@
+module_name: ToF Altitude Control
+
+parameters:
+  - group: ToF Altitude Control
+    definitions:
+
+      TOF_MODE:
+        description:
+          short: ToF sensor mode
+          long: Selects the ToF measurement source. 0 uses the simulated sensor and 1 uses the PX4 distance_sensor topic for a real sensor.
+        type: int32
+        default: 0
+        min: 0
+        max: 1
+
+      TOF_ALT:
+        description:
+          short: Target altitude
+          long: Desired altitude above the local reference used by the ToF altitude controller.
+        type: float
+        unit: m
+        default: 1.0
+        min: 0.1
+        max: 4.0
+        decimal: 2
+
+      TOF_KP:
+        description:
+          short: Proportional gain
+          long: Proportional gain used by the ToF altitude PD controller.
+        type: float
+        default: 0.8
+        min: 0.0
+        max: 5.0
+        decimal: 2
+
+      TOF_KD:
+        description:
+          short: Derivative gain
+          long: Derivative gain used by the ToF altitude PD controller.
+        type: float
+        default: 0.10
+        min: 0.0
+        max: 2.0
+        decimal: 2
+
+      TOF_ALPHA:
+        description:
+          short: Low-pass filter coefficient
+          long: Low-pass filter coefficient applied to valid ToF measurements.
+        type: float
+        default: 0.20
+        min: 0.01
+        max: 1.0
+        decimal: 2
