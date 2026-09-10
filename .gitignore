@@ -1,0 +1,47 @@
+# PX4 / CMake build output
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled files
+*.o
+*.a
+*.so
+*.elf
+*.bin
+
+# PX4 firmware files
+*.px4
+
+# Flight logs
+*.ulg
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Experimental files that may become large
+experiments/raw_data/*
+!experiments/raw_data/.gitkeep
